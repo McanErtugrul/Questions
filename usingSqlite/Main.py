@@ -24,11 +24,11 @@ while True:
         library.ShowBooks()
 
     elif (operation == "2"):
-        isim = input("Which book do you want ? ")
+        title = input("Which book do you want ? ")
         print("Questioning the Book ...")
         time.sleep(2)
 
-        library.BookInquery(isim)
+        library.BookInquery(title)
 
     elif (operation == "3"):
         title = input("Title :")
@@ -58,7 +58,7 @@ while True:
 
 
     elif (operation == "5"):
-        isim = input("Which book would you like to increase the number of reads ?")
+        title = input("Which book would you like to increase the number of reads ?")
 
         library.AddRead(title)
         print("Book reading count increased")
